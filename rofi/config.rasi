@@ -1,0 +1,12 @@
+configuration {
+  display-drun: " ";
+  display-window: "Windows:";
+  drun-display-format: "{icon} {name}";
+  modes: [window,run,drun,emoji];
+  show-icons: true;
+  icon-theme: "Adwaita";
+}
+
+// @theme "/home/shork/.config/rofi/theme.rasi"
+@theme "/home/shork/.config/rofi/theme1.rasi"
+// @theme "/home/shork/.cache/wal/colors-rofi-dark.rasi"

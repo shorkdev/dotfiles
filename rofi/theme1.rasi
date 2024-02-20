@@ -1,0 +1,83 @@
+* {
+    active-background: #8D9197;
+    active-foreground: @foreground;
+    normal-background: @background;
+    normal-foreground: @foreground;
+    urgent-background: #778491;
+    urgent-foreground: @foreground;
+
+    alternate-active-background: @background;
+    alternate-active-foreground: @foreground;
+    alternate-normal-background: @background;
+    alternate-normal-foreground: @foreground;
+    alternate-urgent-background: @background;
+    alternate-urgent-foreground: @foreground;
+
+    selected-active-background: #778491;
+    selected-active-foreground: @foreground;
+    selected-normal-background: #8D9197;
+    selected-normal-foreground: @foreground;
+    selected-urgent-background: #AD9C93;
+    selected-urgent-foreground: @foreground;
+
+    background-color: @background;
+    background: #453a36;
+    foreground: #dfcfc2;
+    fg: #ffffff;
+    border-color: @background;
+    spacing: 2;
+}
+
+window {
+  width: 45%;
+  background-color: @background;
+    border: 0;
+    padding: 2.5ch;
+}
+
+element {
+  padding: 8;
+  text-color: @normal-foreground;
+}
+
+element selected {
+  text-color: @fg;
+}
+
+element-text {
+  background-color: inherit;
+  text-color: inherit;
+  vertical-align: 0.5;
+}
+
+element-icon {
+  size: 30;
+}
+
+entry {
+  background-color: @alternate-normal-background;
+  padding: 8;
+  text-color: @foreground;
+}
+
+inputbar {
+  children: [prompt,entry];
+}
+
+listview {
+  background-color: @background;
+  columns: 1;
+  lines: 8;
+}
+
+mainbox {
+  background-color: @background;
+  children: [inputbar,listview];
+}
+
+prompt {
+  background-color: @alternate-normal-background;
+  enabled: true;
+  padding: 8 0 0 8;
+  text-color: @foreground;
+}
